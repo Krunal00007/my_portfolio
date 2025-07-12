@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krunal | Full Stack Developer</title>
+    <link rel="icon" type="image/png" href="KP.ico" />
+
+
+    <!-- ye Tailwind CSS ke liye -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ye external styles ke liye -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- ye scroll & element animation ke liye -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- ye font family "Inter" ke liye -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <!-- ye project card hover blur aur shadow ke liye -->
+    <style>
+        .project-card {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] text-white font-inter">
+
+    <!-- ye top navbar section he -->
+    <header
+        class="w-full fixed top-0 left-0 z-50 bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] bg-opacity-90 shadow-md">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-white">👨‍💻 Krunal Patel</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-300 hover:text-indigo-400 transition">About</a>
+                <a href="#projects" class="text-gray-300 hover:text-indigo-400 transition">Projects</a>
+                <a href="#contact" class="text-gray-300 hover:text-indigo-400 transition">Contact</a>
+            </nav>
+            <div class="md:hidden text-2xl text-white cursor-pointer">☰</div>
+        </div>
+    </header>
+
+    <!-- ye hero section me animation ke liye -->
+    <section
+        class="relative flex flex-col-reverse md:flex-row items-center justify-between max-w-6xl mx-auto px-6 md:px-10 pt-24 md:pt-28 min-h-screen overflow-hidden">
+        <div class="md:w-1/2 text-center md:text-left space-y-6 z-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight glow-text">Hi, I’m <span
+                    class="text-indigo-400">Krunal</span></h1>
+            <p class="text-lg md:text-xl text-gray-200 leading-relaxed max-w-xl">
+                A passionate <strong>Full Stack Developer</strong> 🚀 crafting modern UI/UX experiences and powerful web
+                applications.<br><br>
+                Currently pursuing MCA in Full Stack Web Development from Parul University, I enjoy turning design into
+                real code. I'm skilled in <strong>HTML, CSS, JavaScript, Tailwind</strong>, and also work with tools
+                like <strong>Figma</strong>, GitHub, and Adobe XD.<br><br>
+                I’ve built projects like a smart chatbot, portfolio website, and keep solving coding problems on
+                <strong>LeetCode</strong> to grow my problem-solving abilities.
+            </p>
+            <a href="#projects" class="glow-button">🚀 View My Work</a>
+        </div>
+
+        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_jtbfg2nb.json" background="transparent"
+            speed="1" style="width: 300px; height: 300px;" loop autoplay>
+        </lottie-player>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="relative py-20 px-6 md:px-10 bg-[#1a1a2e] text-white">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+            <div class="md:w-1/3 flex justify-center" data-aos="fade-right">
+                <img src="krunal.png" alt="Krunal Patel"
+                    class="w-64 h-64 object-cover rounded-full border-4 border-indigo-500 shadow-2xl hover:scale-105 transition-transform duration-300" />
+
+            </div>
+            <div class="md:w-2/3 space-y-5" data-aos="fade-left">
+                <h2 class="text-3xl font-bold text-indigo-400 mb-2">About Me</h2>
+                <p class="text-gray-200 leading-relaxed">
+                    Hello! I'm Krunal Patel, a dedicated and self-motivated developer with a positive attitude and a
+                    hunger to continuously learn and grow. I'm currently pursuing an MCA in Full Stack Web Development
+                    from Parul University.
+                    <br /><br />
+                    My passion lies in front-end development, especially in transforming creative designs into
+                    responsive and accessible web interfaces. I love collaborating with teams, sharing knowledge, and
+                    staying updated with modern development trends.
+                    <br /><br />
+                    I'm known for my calm and friendly nature, and I always strive to bring clarity and quality into my
+                    work. I strongly believe in smart work, attention to detail, and creating meaningful digital
+                    experiences.
+                </p>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 text-gray-300">
+                    <li>🎓 MCA – Parul University</li>
+                    <li>🌍 From: Bharuch, Gujarat</li>
+                    <li>💬 Languages: Hindi, Gujarati, English</li>
+                    <li>🛠️ Tools: GitHub, LeetCode, Adobe XD</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="bg-[#111827] text-white py-20 px-6 md:px-10">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-indigo-400 mb-8" data-aos="fade-up">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="project-card rounded-xl p-6" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="Chatbot"
+                        class="w-16 h-16 mb-4 mx-auto" />
+                    <h3 class="text-xl font-semibold mb-2">College HelpBot 🤖</h3>
+                    <p class="text-gray-300 text-sm mb-4">A responsive chatbot built for students to quickly access
+                        campus information using HTML, JS, and Tailwind CSS.</p>
+                    <div class="flex justify-center gap-2 flex-wrap text-xs text-gray-200 mb-4">
+                        <span class="bg-indigo-600 px-2 py-1 rounded">HTML</span>
+                        <span class="bg-indigo-600 px-2 py-1 rounded">CSS</span>
+                        <span class="bg-indigo-600 px-2 py-1 rounded">JS</span>
+                        <span class="bg-indigo-600 px-2 py-1 rounded">Tailwind</span>
+                    </div>
+                    <button
+                        onclick="openModal('College HelpBot 🤖', 'This chatbot helps students access campus FAQs. Built with HTML, CSS, JS and Tailwind.', 'https://cdn-icons-png.flaticon.com/512/4712/4712109.png', 'https://krunal00007.github.io/college-helpbot/')"
+                        class="inline-block px-4 py-2 text-sm bg-indigo-500 hover:bg-indigo-600 rounded-full transition">👁️
+                        Preview</button>
+                </div>
+
+                <div class="project-card rounded-xl p-6" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2721/2721622.png" alt="Portfolio"
+                        class="w-16 h-16 mb-4 mx-auto" />
+                    <h3 class="text-xl font-semibold mb-2">Portfolio Website 🌐</h3>
+                    <p class="text-gray-300 text-sm mb-4">A modern developer portfolio showcasing my skills, education,
+                        and projects with animation and dark mode toggle.</p>
+                    <div class="flex justify-center gap-2 flex-wrap text-xs text-gray-200 mb-4">
+                        <span class="bg-indigo-600 px-2 py-1 rounded">HTML</span>
+                        <span class="bg-indigo-600 px-2 py-1 rounded">Tailwind</span>
+                        <span class="bg-indigo-600 px-2 py-1 rounded">JavaScript</span>
+                    </div>
+                    <button
+                        onclick="openModal('Portfolio Website 🌐', 'A responsive developer portfolio with dark mode and animations. Built with HTML, Tailwind, JS.', 'https://cdn-icons-png.flaticon.com/512/2721/2721622.png', 'https://krunal00007.github.io/my_portfolio')"
+                        class="inline-block px-4 py-2 text-sm bg-indigo-500 hover:bg-indigo-600 rounded-full transition">👁️
+                        Preview</button>
+                </div>
+
+                <div class="project-card rounded-xl p-6" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="E-commerce"
+                        class="w-16 h-16 mb-4 mx-auto" />
+                    <h3 class="text-xl font-semibold mb-2">E-Commerce Website 🛒</h3>
+                    <p class="text-gray-300 text-sm mb-4">A frontend e-commerce site with product cards and category
+                        filter, styled with Tailwind. Deployed on GitHub Pages.</p>
+                    <div class="flex justify-center gap-2 flex-wrap text-xs text-gray-200 mb-4">
+                        <span class="bg-indigo-600 px-2 py-1 rounded">HTML</span>
+                        <span class="bg-indigo-600 px-2 py-1 rounded">CSS</span>
+                        <span class="bg-indigo-600 px-2 py-1 rounded">JS</span>
+                    </div>
+                    <button
+                        onclick="openModal('E-Commerce Website 🛒', 'A responsive product catalog with Tailwind and JS filter. Hosted via GitHub Pages.', 'https://cdn-icons-png.flaticon.com/512/1170/1170678.png', 'https://krunal00007.github.io/e-commerce/')"
+                        class="inline-block px-4 py-2 text-sm bg-indigo-500 hover:bg-indigo-600 rounded-full transition">👁️
+                        Preview</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Component -->
+    <div id="modal"
+        class="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex items-center justify-center hidden z-50">
+        <div id="modalContent" class="bg-[#1e293b] text-white p-6 rounded-lg w-11/12 max-w-lg relative shadow-lg">
+            <button onclick="closeModal()" class="absolute top-2 right-4 text-xl">✖️</button>
+            <h3 id="modalTitle" class="text-2xl font-bold mb-2">Modal Title</h3>
+            <img id="modalImage" src="" class="w-20 mx-auto mb-4" alt="Project Image" />
+            <p id="modalDesc" class="text-sm text-gray-300 mb-4">Modal Description</p>
+            <a id="modalLink" href="#" target="_blank"
+                class="inline-block px-4 py-2 bg-indigo-500 hover:bg-indigo-600 rounded-full text-sm">🔗 Visit
+                Project</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="relative py-20 px-6 md:px-10 bg-[#1a1a2e] text-white">
+        <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+            <h2 class="text-4xl font-bold text-indigo-400 mb-6">Let's Connect 📩</h2>
+            <p class="text-gray-300 mb-10 max-w-xl mx-auto">
+                Whether you have a question, a project idea, or just want to say hello — I'm always open to new
+                opportunities and collaboration!
+            </p>
+
+            <form id="contactForm" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <input id="name" type="text" name="name" placeholder="Your Name" required
+                        class="bg-[#2c2c54] border border-gray-600 text-white px-4 py-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                    <input id="email" type="email" name="email" placeholder="Your Email" required
+                        class="bg-[#2c2c54] border border-gray-600 text-white px-4 py-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                </div>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required
+                    class="bg-[#2c2c54] border border-gray-600 text-white px-4 py-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+
+                <button id="submitBtn" type="submit"
+                    class="bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-full text-white font-semibold transition-all flex items-center justify-center gap-2">
+                    📬 <span id="btnText">Send Message</span>
+                    <svg id="btnSpinner" class="animate-spin h-5 w-5 hidden" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
+                        </circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+                    </svg>
+                </button>
+
+                <p id="formStatus" class="text-sm mt-4"></p>
+            </form>
+
+            <div class="mt-10 text-sm text-gray-400">
+                Or reach out directly via: <br />
+                📧 <a href="mailto:krunalpatel1966007@gmail.com"
+                    class="text-indigo-400 hover:underline">krunalpatel1966007@gmail.com</a> <br />
+                🔗 <a href="https://www.linkedin.com/in/krunal-patel-b2526b2a4" target="_blank"
+                    class="text-indigo-400 hover:underline">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function openModal(title, desc, img, link) {
+            document.getElementById("modalTitle").innerText = title;
+            document.getElementById("modalDesc").innerText = desc;
+            document.getElementById("modalImage").src = img;
+            document.getElementById("modalLink").href = link;
+
+            setTimeout(() => {
+                document.getElementById("modal").classList.remove("hidden");
+                document.body.classList.add("overflow-hidden");
+            }, 50);
+        }
+
+
+        function closeModal() {
+            document.getElementById("modal").classList.add("hidden");
+            document.body.classList.remove("overflow-hidden");
+        }
+        window.addEventListener("click", function (e) {
+            const modal = document.getElementById("modal");
+            const content = document.getElementById("modalContent");
+
+            if (!modal.classList.contains("hidden") && !content.contains(e.target)) {
+                closeModal();
+            }
+        });
+    </script>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
+            const status = document.getElementById("formStatus");
+            const spinner = document.getElementById("btnSpinner");
+            const btnText = document.getElementById("btnText");
+
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                status.textContent = "❌ Please enter a valid email address.";
+                status.className = "text-red-400 text-sm mt-2";
+                return;
+            }
+
+            spinner.classList.remove("hidden");
+            btnText.textContent = "Sending...";
+
+            try {
+                const response = await fetch("https://formspree.io/f/mblynnye", {
+                    method: "POST",
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, email, message }),
+                });
+
+                if (response.ok) {
+                    status.textContent = "✅ Message sent successfully!";
+                    status.className = "text-green-400 text-sm mt-2";
+                    document.getElementById("contactForm").reset();
+                } else {
+                    status.textContent = "❌ Something went wrong. Try again.";
+                    status.className = "text-red-400 text-sm mt-2";
+                }
+            } catch (error) {
+                status.textContent = "❌ Network error. Try again.";
+                status.className = "text-red-400 text-sm mt-2";
+            }
+
+            spinner.classList.add("hidden");
+            btnText.textContent = "Send Message";
+        });
+    </script>
+
+</body>
+
+</html>

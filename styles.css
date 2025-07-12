@@ -1,0 +1,36 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.glow-text {
+    text-shadow: 0 0 8px rgba(99, 102, 241, 0.8);
+}
+
+.glow-button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: white;
+    background: linear-gradient(90deg, #6366f1, #8b5cf6, #ec4899);
+    border-radius: 9999px;
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glow-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(236, 72, 153, 0.7);
+}
+
+.glow-image {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+}
